@@ -1,0 +1,396 @@
+/* ============================================================
+   NEXIN — طراحی واکنش‌گرا
+   ============================================================ */
+
+/* ---------- لپ‌تاپ کوچک ---------- */
+@media (max-width: 1080px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  .hero-visual {
+    min-height: 480px;
+    max-width: 560px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .svc-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-preview {
+    display: none;
+  }
+
+  .svc-line {
+    display: block;
+  }
+
+  .sd-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sd-aside {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .pd-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .contact-side {
+    position: static;
+  }
+}
+
+/* ---------- تبلت ---------- */
+@media (max-width: 900px) {
+  .main-nav,
+  .hd-cta {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .wc-feature {
+    grid-column: span 12;
+  }
+
+  .wc-a,
+  .wc-b {
+    grid-column: span 6;
+  }
+
+  .wc-wide .work-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .wc-wide .w-frame {
+    aspect-ratio: 16 / 9;
+  }
+
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sticky-cols {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sticky-side {
+    position: static;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pf-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pf-hero-copy .page-title {
+    transform: none;
+  }
+
+  .gh-window {
+    transform: none;
+  }
+
+  .appr-row {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .appr-row p {
+    grid-column: 2;
+  }
+
+  .collab {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px 24px;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .duo,
+  .pd-duo {
+    grid-template-columns: 1fr;
+  }
+
+  .checks {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .srv-row {
+    grid-template-columns: 60px 1fr 40px;
+  }
+
+  .srv-code {
+    display: none;
+  }
+
+  .srv-arr {
+    grid-column: 3;
+  }
+
+  .ft-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .sec-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
+
+/* ---------- موبایل بزرگ ---------- */
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 13px 22px;
+    width: 100%;
+  }
+
+  .hero-cta .btn,
+  .cta-actions .btn,
+  .sd-actions .btn,
+  .cta-mini .btn {
+    width: 100%;
+  }
+
+  .btn-sm {
+    width: auto;
+  }
+
+  .wc-a,
+  .wc-b {
+    grid-column: span 12;
+  }
+
+  .w-more {
+    display: none;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v-card:nth-child(even) {
+    transform: none;
+  }
+
+  .v-card:nth-child(even):hover {
+    transform: translateY(-6px);
+  }
+
+  .collab-points {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-inline-start: 30px;
+  }
+
+  .timeline::before {
+    display: block;
+    top: 6px;
+    bottom: 6px;
+    inset-inline: 6px auto;
+    width: 2px;
+    height: auto;
+  }
+
+  .tl-step {
+    padding-top: 0;
+    padding-bottom: 34px;
+    padding-inline-start: 8px;
+  }
+
+  .tl-dot {
+    inset-inline-start: -30px;
+    top: 4px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .sd-aside {
+    grid-template-columns: 1fr;
+  }
+
+  .ch-row {
+    grid-template-columns: 48px 1fr 30px;
+  }
+
+  .ch-val {
+    display: none;
+  }
+
+  .ch-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .pd-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-next {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ft-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cta-wm {
+    font-size: 5.4rem;
+  }
+
+  .card-code {
+    position: relative;
+    inset-inline: 0;
+    bottom: auto;
+    width: 100%;
+    margin-top: 18px;
+    transform: none;
+  }
+
+  .card-mobile {
+    display: none;
+  }
+
+  .hero-visual {
+    min-height: 0;
+  }
+
+  .chip-float {
+    inset-inline-start: 0;
+    top: auto;
+    bottom: 6%;
+  }
+
+  .deco-ring {
+    width: 190px;
+    height: 190px;
+    top: -30px;
+    inset-inline-end: -60px;
+  }
+
+  .svc-row {
+    grid-template-columns: 44px 1fr 36px;
+    padding: 20px 8px;
+  }
+
+  .svc-arr {
+    width: 34px;
+    height: 34px;
+  }
+
+  .m-links a {
+    font-size: 1.3rem;
+  }
+
+  .hero-meta {
+    gap: 10px 16px;
+  }
+
+  .ft-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .site-footer {
+    border-radius: 20px 20px 0 0;
+    margin-top: clamp(36px, 6vw, 60px);
+  }
+
+  .ft-grid {
+    padding-block: clamp(32px, 5vw, 44px) clamp(24px, 3.5vw, 32px);
+    gap: 24px;
+  }
+
+  .ft-brand {
+    text-align: center;
+  }
+
+  .ft-brand .logo {
+    justify-content: center;
+  }
+
+  .ft-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ft-social {
+    justify-content: center;
+  }
+
+  .ft-col {
+    text-align: center;
+  }
+
+  .ft-contact li {
+    justify-content: center;
+  }
+}
+
+/* ---------- موبایل کوچک ---------- */
+@media (max-width: 420px) {
+  .wm-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wm-stat:last-child {
+    display: none;
+  }
+
+  .h-display {
+    font-size: 2.1rem;
+  }
+
+  .page-title {
+    font-size: 1.9rem;
+  }
+}

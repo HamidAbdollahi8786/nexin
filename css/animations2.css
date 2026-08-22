@@ -1,0 +1,193 @@
+/* ============================================================
+   NEXIN — انیمیشن‌ها و حرکت‌ها
+   همه‌ی حرکت‌ها ظریف و هدفمندند؛ با prefers-reduced-motion غیرفعال می‌شوند.
+   ============================================================ */
+
+/* ---------- ظهور هنگام اسکرول ---------- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.8s var(--ease),
+    transform 0.8s var(--ease);
+  transition-delay: var(--d, 0ms);
+  will-change: opacity, transform;
+}
+
+[data-reveal="left"] {
+  transform: translateX(-32px);
+}
+
+[data-reveal="right"] {
+  transform: translateX(32px);
+}
+
+[data-reveal="scale"] {
+  transform: scale(0.96);
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- ظهور خطی تیترها (Line Mask) ---------- */
+.mask-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+}
+
+.mask-line > span {
+  display: block;
+  transform: translateY(112%);
+  animation: mask-up 0.95s var(--ease) forwards;
+  animation-delay: var(--d, 0ms);
+}
+
+/* ---------- شناور بودن کارت‌های هیرو ---------- */
+.float-slow {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+.float-slower {
+  animation: floaty 9s 1.2s ease-in-out infinite;
+}
+
+.float-slowest {
+  animation: floaty 11s 0.6s ease-in-out infinite;
+}
+
+/* ---------- تنفس تصویر کاور پروژه ---------- */
+.kenburns img {
+  animation: breathe 14s ease-in-out infinite alternate;
+}
+
+/* ---------- کلیدواژه‌ها ---------- */
+@keyframes mask-up {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-11px) rotate(var(--rot, 0deg));
+  }
+}
+
+.card-code {
+  --rot: -3deg;
+}
+
+.card-mobile {
+  --rot: 4deg;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.55);
+    opacity: 0.9;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes blink-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes dash-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes mq-move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes breathe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---------- کاهش حرکت ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .mask-line > span {
+    transform: none;
+    animation: none;
+  }
+
+  .mq-track {
+    animation: none;
+  }
+
+  .kenburns img {
+    animation: none;
+  }
+}

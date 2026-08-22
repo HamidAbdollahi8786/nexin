@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نکسین | استودیوی طراحی و توسعه‌ی نرم‌افزار</title>
+    <meta
+      name="description"
+      content="نکسین یک استودیوی مستقل نرم‌افزار است؛ از طراحی رابط کاربری تا توسعه‌ی وب، پشتیبانی و نگهداری، Backend و سایت‌های وردپرسی، محصول دیجیتال شما را از ایده تا انتشار می‌سازیم."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content="نکسین | استودیوی طراحی و توسعه‌ی نرم‌افزار" />
+    <meta
+      property="og:description"
+      content="محصول دیجیتال شما، از ایده تا انتشار؛ با وسواس طراحی و دقت مهندسی."
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+    <div data-header></div>
+
+    <main id="main">
+      <!-- ================= هیرو ================= -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="hero-title-row">
+              <p class="hero-kicker" data-reveal>استودیوی نرم‌افزار نکسین</p>
+              <h1 class="h-display">
+                <span class="mask-line"><span style="--d:60ms">نرم‌افزارِ خوب <em class="accent" style="font-style:normal">اتفاقی</em> نیست؛</span></span>
+                <span class="mask-line"><span style="--d:200ms">دقت، کارِ ماست.</span></span>
+              </h1>
+
+              <!-- ترمینال کد — فقط موبایل، کنار عنوان -->
+              <div class="hero-code" aria-hidden="true">
+                <div class="hc-bar"><span></span><span></span><span></span></div>
+                <pre class="hc-body" dir="ltr"><code><span class="hc-cmt">// build with nexin</span>
+                <span class="hc-kw">const</span> product = nexin.<span class="hc-fn">build</span>({
+                  idea: <span class="hc-str">"yours"</span>,
+                  quality: <span class="hc-str">"obsessive"</span>
+                });
+                <span class="hc-kw">await</span> product.<span class="hc-fn">ship</span>();</code></pre>
+              </div>
+            </div>
+
+            <p class="hero-lead" data-reveal style="--d:250ms">
+              نکسین یک استودیوی مستقل توسعه‌ی نرم‌افزار است؛ محصول دیجیتال شما را از
+              اولین اسکچ تا انتشار می‌سازیم — با وسواسِ طراح و دقتِ مهندس.
+            </p>
+
+            <div class="hero-cta" data-reveal style="--d:340ms">
+              <a class="btn btn-primary" href="./contact.html">
+                شروع یک پروژه
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="./portfolio.html">دیدن نمونه‌کارها</a>
+            </div>
+
+            <div class="hero-meta" data-reveal style="--d:430ms">
+              <span>تهران، ایران</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span>همکاری حضوری و دورکاری</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span dir="ltr">example@nexin.ir</span>
+            </div>
+
+            <!-- ================= صحنه‌ی کدنویسی — فقط موبایل ================= -->
+            <div class="hero-mobile-stage" aria-hidden="true" data-reveal style="--d:520ms">
+              <span class="hms-glow"></span>
+
+              <div class="hms-window">
+                <div class="hms-bar">
+                  <span class="hms-dots"><i></i><i></i><i></i></span>
+                  <span class="hms-tab">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    nexin.build.js
+                  </span>
+                </div>
+                <pre class="hms-code" dir="ltr"><code><span class="hms-ln">1</span><span class="hms-cmt">// از ایده تا محصول</span>
+<span class="hms-ln">2</span><span class="hms-kw">import</span> { design, build, ship } <span class="hms-kw">from</span> <span class="hms-str">'nexin'</span>;
+<span class="hms-ln">3</span>
+<span class="hms-ln">4</span><span class="hms-kw">const</span> product = <span class="hms-fn">build</span>({
+<span class="hms-ln">5</span>  idea: <span class="hms-str">'شما'</span>,
+<span class="hms-ln">6</span>  precision: <span class="hms-num">100</span>,
+<span class="hms-ln">7</span>  status: <span class="hms-str">'obsessive'</span>
+<span class="hms-ln">8</span>});
+<span class="hms-ln">9</span>
+<span class="hms-ln">10</span><span class="hms-kw">await</span> product.<span class="hms-fn">ship</span>();<span class="hms-cursor"></span></code></pre>
+                <div class="hms-foot">
+                  <span class="hms-status"><i class="hms-live"></i> در حال بیلد</span>
+                  <span class="hms-status hms-ok">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 12.5 5 5 10-11"/></svg>
+                    ۰ باگ
+                  </span>
+                </div>
+              </div>
+
+              <div class="hms-chip">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg>
+                کد تمیز، تحویل به‌موقع
+              </div>
+            </div>
+          </div>
+
+          <!-- ترکیب بصری: محصولِ در حال ساخت -->
+          <div class="hero-visual" aria-hidden="true">
+            <span class="deco-ring"></span>
+
+            <div class="window float-slow">
+              <div class="win-bar">
+                <span class="win-dots"><i></i><i></i><i></i></span>
+                <span class="win-url">nexin.app/panel</span>
+              </div>
+              <div class="win-body">
+                <div class="win-side">
+                  <span class="ln on"></span>
+                  <span class="ln"></span>
+                  <span class="ln"></span>
+                  <span class="ln"></span>
+                  <span class="ln"></span>
+                </div>
+                <div class="win-main">
+                  <div class="wm-head">
+                    <span class="ttl"></span>
+                    <span class="wm-live"><i></i> زنده</span>
+                  </div>
+                  <div class="wm-stats">
+                    <div class="wm-stat"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+                    <div class="wm-stat"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+                    <div class="wm-stat"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+                  </div>
+                  <div class="wm-chart">
+                    <span class="bar" style="--h:34%;--i:0"></span>
+                    <span class="bar" style="--h:52%;--i:1"></span>
+                    <span class="bar" style="--h:40%;--i:2"></span>
+                    <span class="bar hot" style="--h:78%;--i:3"></span>
+                    <span class="bar" style="--h:58%;--i:4"></span>
+                    <span class="bar" style="--h:46%;--i:5"></span>
+                    <span class="bar hot" style="--h:90%;--i:6"></span>
+                    <span class="bar" style="--h:62%;--i:7"></span>
+                    <span class="bar" style="--h:70%;--i:8"></span>
+                    <span class="bar" style="--h:50%;--i:9"></span>
+                    <svg class="spark" viewBox="0 0 300 110" preserveAspectRatio="none">
+                      <polyline points="0,86 30,70 60,76 90,48 120,58 150,34 180,44 210,20 240,30 270,12 300,18"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-code float-slower">
+              <span class="cm">// build with nexin</span><br />
+              <span class="kw">const</span> product = <span class="fn">nexin.build</span>({<br />
+              &nbsp;&nbsp;idea: <span class="st">"yours"</span>,<br />
+              &nbsp;&nbsp;quality: <span class="st">"obsessive"</span><br />
+              });<br />
+              <span class="kw">await</span> product.<span class="fn">ship</span>(); <span class="type-caret"></span>
+            </div>
+
+            <div class="card-mobile float-slowest">
+              <span class="cm-notch"></span>
+              <div class="cm-row"><i></i><b style="width:70%"></b></div>
+              <div class="cm-row"><i></i><b style="width:52%"></b></div>
+              <div class="cm-row"><i></i><b style="width:62%"></b></div>
+              <div class="cm-btn">تأیید و ادامه</div>
+            </div>
+
+            <div class="chip-float float-slow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></svg>
+              نسخه‌ی ۲.۴ منتشر شد
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= خدمات ================= -->
+      <section class="sec sec--surface" id="services">
+        <!-- کد شناور — فقط موبایل -->
+        <div class="code-drift code-drift--tl" aria-hidden="true">
+          services.<span class="cd-fn">map</span>(s <span class="cd-kw">=&gt;</span> <span class="cd-fn">ship</span>(s))
+        </div>
+        <div class="code-drift code-drift--tr" aria-hidden="true">
+          <span class="cd-kw">export</span> <span class="cd-fn">default</span> quality
+        </div>
+        <div class="code-drift code-drift--bl" aria-hidden="true">
+          <span class="cd-kw">await</span> design.<span class="cd-fn">review</span>()
+        </div>
+        <div class="container">
+          <div class="svc-head" data-reveal>
+            <div class="svc-head-copy">
+              <p class="sec-label">خدمات</p>
+              <h2 class="h2">چه می‌سازیم</h2>
+            </div>
+          </div>
+
+          <!-- گوشی شناور — بالا راست بخش خدمات -->
+          <div class="float-phone" aria-hidden="true">
+            <div class="fp-device">
+              <div class="fp-screen">
+                <div class="fp-row"><b style="width:60%"></b></div>
+                <div class="fp-row"><b style="width:80%"></b></div>
+                <div class="fp-card"></div>
+                <div class="fp-row"><b style="width:50%"></b></div>
+                <div class="fp-toggle on"></div>
+                <div class="fp-toggle"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="svc-wrap">
+            <div id="svcList" data-reveal></div>
+            <aside class="svc-preview" aria-hidden="true">
+              <div class="pv-frame">
+                <div id="svcPreview"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= نمونه‌کارهای منتخب ================= -->
+      <section class="sec sec--tint" id="work">
+        <!-- کد شناور — فقط موبایل -->
+        <div class="code-drift code-drift--tr" aria-hidden="true">
+          projects.<span class="cd-fn">filter</span>(p <span class="cd-kw">=&gt;</span> p.story)
+        </div>
+        <div class="code-drift code-drift--bl" aria-hidden="true">
+          <span class="cd-kw">$</span> git commit -m <span class="cd-str">"ship it"</span>
+        </div>
+        <div class="code-drift code-drift--br" aria-hidden="true">
+          <span class="cd-fn">render</span>(<span class="cd-str">'portfolio'</span>)
+        </div>
+        <div class="container">
+          <!-- نمودار شناور — بالا چپ بخش پروژه‌ها -->
+          <div class="float-chart" aria-hidden="true">
+            <div class="fc-win">
+              <div class="fc-bar"><span></span><span></span><span></span></div>
+              <div class="fc-body">
+                <svg viewBox="0 0 280 120" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="fcGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#1a1a24" stop-opacity="0.9"/>
+                      <stop offset="100%" stop-color="#6c63ff" stop-opacity="0.15"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,90 C30,85 50,70 80,55 C110,40 130,75 160,45 C190,20 220,35 250,15 L280,8 L280,120 L0,120 Z" fill="url(#fcGrad)"/>
+                  <path d="M0,90 C30,85 50,70 80,55 C110,40 130,75 160,45 C190,20 220,35 250,15 L280,8" fill="none" stroke="#6c63ff" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec-head" data-reveal>
+            <div class="sec-head-copy">
+              <p class="sec-label">۰۲ / نمونه‌کارهای منتخب</p>
+              <h2 class="h2">پروژه‌هایی که روایت دارند</h2>
+              <p class="sec-sub">
+                هر پروژه یک مسئله‌ی واقعی بود؛ اینجا نتیجه‌ی گفتگوی ما با آن مسئله را می‌بینید.
+              </p>
+            </div>
+            <a class="sec-link" href="./portfolio.html">
+              همه‌ی پروژه‌ها
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            </a>
+          </div>
+
+          <div class="work-grid" id="workGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= دعوت به اقدام ================= -->
+      <section class="sec">
+        <!-- کد شناور — فقط موبایل -->
+        <div class="code-drift code-drift--tl" aria-hidden="true">
+          <span class="cd-kw">const</span> next = <span class="cd-str">'your project'</span>
+        </div>
+        <div class="code-drift code-drift--tr" aria-hidden="true">
+          deploy: <span class="cd-str">'success'</span> <span class="cd-ok">✓</span>
+        </div>
+        <div class="code-drift code-drift--bl" aria-hidden="true">
+          <span class="cd-fn">start</span>({ conversation: <span class="cd-kw">true</span> })
+        </div>
+        <div class="container">
+          <div class="cta-panel" data-reveal="scale">
+            <span class="cx cx-tl" aria-hidden="true">+</span>
+            <span class="cx cx-tr" aria-hidden="true">+</span>
+            <span class="cx cx-bl" aria-hidden="true">+</span>
+            <span class="cx cx-br" aria-hidden="true">+</span>
+
+            <p class="cta-mono"><b>~</b> $ nexin start --new-project <span class="type-caret" aria-hidden="true"></span></p>
+            <h2 class="cta-title">پروژه‌ی بعدی را با هم بسازیم.</h2>
+            <p class="cta-sub">
+              از یک ایده‌ی روی دستمال کاغذی تا یک محصول کامل — اگر چیزی در ذهن دارید،
+              ارزش یک گفتگوی نیم‌ساعته را دارد. بدون فرم، بدون صف؛ مستقیم با خود تیم.
+            </p>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="./contact.html">
+                شروع گفتگو
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+              </a>
+              <a class="cta-mail" href="mailto:example@nexin.ir">example@nexin.ir</a>
+            </div>
+
+            <span class="cta-wm" aria-hidden="true">NEXIN</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-footer></div>
+
+    <script src="./js/data.js" defer></script>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
