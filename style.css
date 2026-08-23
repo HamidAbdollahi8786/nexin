@@ -2671,12 +2671,13 @@
     font-size: clamp(2.1rem, 4.6vw, 3.5rem);
     font-weight: 900;
     line-height: 1.35;
+    text-align: center;
     max-width: 24ch;
   }
   
   .page-lead {
     margin-top: 20px;
-    max-width: 62ch;
+    max-width: 100ch !important;
     font-size: 1.06rem;
     line-height: 2.05;
     color: var(--c-ink-2);
