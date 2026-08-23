@@ -1,4 +1,4 @@
-  /* ============================================================
+/* ============================================================
     NEXIN — Design System
     استودیو نرم‌افزار نکسین — سیستم طراحی (حالت روشن)
     ============================================================ */
@@ -506,7 +506,7 @@
       height: 100vh;
       z-index: 1000;
       background: var(--c-paper);
-      padding: calc(var(--header-h) + 24px) var(--pad) 36px;
+      padding: 10px 15px;
       display: flex;
       flex-direction: column;
       transform: translateX(100%);
@@ -527,14 +527,17 @@
   
     .m-links {
       flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   
     .m-links a {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       gap: 16px;
-      padding: 16px 4px;
-      font-size: 1.5rem;
+      padding: 14px 4px;
+      font-size: 1.15rem;
       font-weight: 800;
       border-bottom: 1px solid var(--c-line);
       opacity: 0;
@@ -570,7 +573,7 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 23px;
       padding-top: 22px;
       opacity: 0;
       transition: opacity 0.4s 0.35s;
@@ -2062,10 +2065,6 @@
       transform: scaleX(1);
     }
   
-    .srv-row:hover {
-      padding-inline-start: 28px;
-    }
-  
     .srv-num {
       font-family: var(--font-mono);
       font-size: 0.9rem;
@@ -2397,7 +2396,7 @@
     .cta-mini p {
       color: #a9a9c0;
       margin-top: 8px;
-      max-width: 52ch;
+      max-width: 63ch;
     }
   
     /* ---------- صفحه جزئیات پروژه ---------- */

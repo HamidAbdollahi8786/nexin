@@ -207,7 +207,7 @@
   }
   
   .sec-head-copy {
-    max-width: 560px;
+    max-width: 1000px;
   }
   
   .sec-label {
@@ -231,7 +231,7 @@
   .sec-sub {
     margin-top: 14px;
     color: var(--c-muted);
-    max-width: 52ch;
+    max-width: 85ch;
   }
   
   .sec-link {
@@ -509,8 +509,8 @@
     height: 100vh;
     z-index: 1000;
     background: var(--c-paper);
-    padding: calc(var(--header-h) + 24px) var(--pad) 36px;
     display: flex;
+    padding: 10px 15px;
     flex-direction: column;
     transform: translateX(100%);
     opacity: 0;
@@ -530,14 +530,17 @@
   
   .m-links {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .m-links a {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 16px;
-    padding: 16px 4px;
-    font-size: 1.5rem;
+    padding: 14px 4px;
+    font-size: 1.15rem;
     font-weight: 800;
     border-bottom: 1px solid var(--c-line);
     opacity: 0;
@@ -572,11 +575,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 14px;
+    justify-content: flex-start;
+    gap: 23px;
     padding-top: 22px;
     opacity: 0;
     transition: opacity 0.4s 0.35s;
+  }
+  
+  .m-foot .btn {
+    margin-inline-start: auto;
   }
   
   .m-nav.is-open .m-foot {
@@ -705,28 +712,50 @@
   
   .hero-meta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px 22px;
+    flex-wrap: nowrap;
+    gap: 10px;
     margin-top: 40px;
-    padding-top: 22px;
+    padding-top: 24px;
     border-top: 1px solid var(--c-line);
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    color: var(--c-muted);
   }
   
-  .hero-meta span {
+  .hero-meta .hm-item {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    padding: 9px 16px;
+    border: 1px solid var(--c-line);
+    border-radius: 999px;
+    background: var(--c-surface);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--c-ink-2);
+    text-decoration: none;
+    transition: border-color 0.25s var(--ease), background 0.25s var(--ease), color 0.25s var(--ease), transform 0.25s var(--ease);
   }
   
-  .hero-meta .dot {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--c-accent);
+  .hero-meta .hm-mail {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+  }
+  
+  .hero-meta .hm-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--c-accent);
+  }
+  
+  .hero-meta .hm-mail:hover,
+  .hero-meta .hm-mail:focus-visible {
+    border-color: var(--c-accent-line);
+    background: var(--c-accent-soft);
+    color: var(--c-accent-deep);
+    transform: translateY(-2px);
   }
 
   /* ردیف عنوان + گوشی */
@@ -1985,7 +2014,7 @@
   /* لیست خدمات — مطابق طراحی جدید */
   .svc-row {
     display: grid;
-    grid-template-columns: auto 1fr 40px;
+    grid-template-columns: 1fr 40px;
     align-items: center;
     gap: 16px;
     padding: 18px 8px;
@@ -2003,12 +2032,19 @@
     background: transparent;
   }
   
+  .svc-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+  
   .svc-num {
     font-family: var(--font-mono);
     font-size: 0.82rem;
     color: var(--c-muted);
     transition: color 0.25s;
-    min-width: 28px;
+    margin-left: 5px;
   }
   
   .svc-row:hover .svc-num,
@@ -2497,7 +2533,7 @@
     background: var(--c-dark);
     color: #fff;
     border-radius: 20px;
-    padding: clamp(48px, 7vw, 86px) clamp(26px, 5vw, 76px);
+    padding: 35px;
   }
   
   .cta-panel::before {
@@ -2531,10 +2567,10 @@
   
   .cta-title {
     color: #fff;
-    font-size: clamp(1.9rem, 4vw, 3.1rem);
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
     font-weight: 900;
     line-height: 1.4;
-    max-width: 18ch;
+    max-width: 25ch;
   }
   
   .cta-sub {
@@ -2747,7 +2783,7 @@
   }
 
   .story-copy--solo {
-    max-width: 720px;
+    max-width: 1000px;
   }
   
   .sticky-cols {
@@ -3010,15 +3046,9 @@
   .appr-row:last-child {
     border-bottom: 1px solid var(--c-line);
   }
-  
-  .appr-row:hover {
-    background: var(--c-surface);
-    padding-inline-start: 26px;
-  }
-  
   .appr-num {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--c-accent-deep);
     padding-top: 6px;
   }
@@ -3030,7 +3060,7 @@
   .appr-row p {
     color: var(--c-muted);
     line-height: 2.05;
-    max-width: 62ch;
+    max-width: 105ch;
   }
   
   /* ---------- ارزش‌ها — برد ۶ خانه‌ای ---------- */
@@ -3406,11 +3436,6 @@
   .srv-row:hover::before {
     transform: scaleX(1);
   }
-  
-  .srv-row:hover {
-    padding-inline-start: 28px;
-  }
-  
   .srv-num {
     font-family: var(--font-mono);
     font-size: 0.9rem;
@@ -3742,7 +3767,7 @@
   .cta-mini p {
     color: #a9a9c0;
     margin-top: 8px;
-    max-width: 52ch;
+    max-width: 63ch;
   }
   
   /* ---------- صفحه جزئیات پروژه ---------- */
@@ -4164,3 +4189,43 @@
     padding: 40px 20px;
     color: var(--c-muted);
   }
+  
+  .appr-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.appr-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.appr-num {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;          /* کوچیک و ظریف */
+  font-weight: 700;
+  color: var(--c-accent-deep);
+  line-height: 1;
+  white-space: nowrap;
+}
+/* ========== ریسپانسیو بخش همکاری ========== */
+@media (max-width: 900px) {
+  .collab-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .collab-checks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .collab-checks li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}
