@@ -529,7 +529,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
     }
   
     .m-links a {
@@ -1471,7 +1471,7 @@
   
     .cta-title {
       color: #fff;
-      font-size: clamp(1.9rem, 4vw, 3.1rem);
+      font-size: clamp(1.3rem, 4vw, 2.1rem);
       font-weight: 900;
       line-height: 1.4;
       max-width: 18ch;
@@ -1576,7 +1576,7 @@
   
     .page-lead {
       margin-top: 20px;
-      max-width: 62ch;
+      max-width: 100ch!important;
       font-size: 1.06rem;
       line-height: 2.05;
       color: var(--c-ink-2);
