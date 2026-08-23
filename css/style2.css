@@ -529,7 +529,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: center;
     }
   
     .m-links a {
