@@ -169,10 +169,13 @@
   
       list.innerHTML = DATA.services
         .map(function (s, i) {
+          var num = String(i + 1).length < 2 ? "0" + (i + 1) : String(i + 1);
           return (
             '<a class="svc-row" href="' + url("services/" + s.slug + ".html") + '" data-svc="' + i + '">' +
-            '  <span class="svc-num">' + fa2(i + 1) + "</span>" +
-            '  <span class="svc-body"><span class="svc-title">' + s.title + "</span></span>" +
+            '  <span class="svc-left">' +
+            '    <span class="svc-num" dir="ltr">' + num + "</span>" +
+            '    <span class="svc-body"><span class="svc-title">' + s.title + "</span></span>" +
+            "  </span>" +
             '  <span class="svc-arr" aria-hidden="true">' + ic.arrow + "</span>" +
             "</a>"
           );
@@ -242,7 +245,7 @@
               '<div class="pv" data-pv="' + i + '">' +
               '  <div class="pv-illu">' + (illu[s.slug] || "") + "</div>" +
               '  <div class="pv-meta">' +
-              '    <span class="pv-num">' + fa2(i + 1) + "</span>" +
+              '    <span class="pv-num" dir="ltr">' + (String(i + 1).length < 2 ? "0" + (i + 1) : String(i + 1)) + "</span>" +
               "    <h3>" + s.title + "</h3>" +
               "    <p>" + s.line + "</p>" +
               '    <a class="pv-link" href="' + url("services/" + s.slug + ".html") + '">مشاهده‌ی خدمت ' + ic.arrow + "</a>" +

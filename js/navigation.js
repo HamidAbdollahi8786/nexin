@@ -100,8 +100,6 @@
       '<div class="m-nav" id="mobile-nav" aria-hidden="true">' +
       '  <nav class="m-links" aria-label="ناوبری موبایل">' + mLinks + "</nav>" +
       '  <div class="m-foot">' +
-      '    <p class="small">پاسخ‌گویی سریع: <a href="mailto:' + DATA.site.email + '" dir="ltr">' + DATA.site.email + "</a></p>" +
-      '    <a class="btn btn-primary btn-sm" href="' + DATA.url("contact.html") + '">شروع پروژه</a>' +
       "  </div>" +
       "</div>";
 

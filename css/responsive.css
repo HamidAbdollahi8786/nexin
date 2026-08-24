@@ -485,6 +485,7 @@
     font-size: 0.68rem;
     line-height: 1.85;
     color: #c8c8d8;
+    text-align: left;
     white-space: pre;
     overflow-x: auto;
   }
