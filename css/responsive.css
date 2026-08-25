@@ -628,9 +628,19 @@
   }
 
   .cta-actions .btn,
-  .sd-actions .btn,
   .cta-mini .btn {
     width: 100%;
+  }
+
+  .sd-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sd-actions .btn {
+    flex: 1 1 0;
+    width: 0;
   }
 
   .hero-cta .btn {

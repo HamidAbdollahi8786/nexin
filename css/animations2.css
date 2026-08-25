@@ -57,12 +57,6 @@
 .float-slowest {
   animation: floaty 11s 0.6s ease-in-out infinite;
 }
-
-/* ---------- تنفس تصویر کاور پروژه ---------- */
-.kenburns img {
-  animation: breathe 14s ease-in-out infinite alternate;
-}
-
 /* ---------- کلیدواژه‌ها ---------- */
 @keyframes mask-up {
   to {

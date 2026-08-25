@@ -299,11 +299,7 @@
   .btn svg {
     transition: transform 0.3s var(--ease);
   }
-  
-  .btn:hover svg {
-    transform: translateX(-4px);
-  }
-  
+
   .btn-primary {
     background: var(--c-accent);
     color: #fff;
@@ -3610,17 +3606,20 @@
     color: #fff;
     border-radius: var(--radius-lg);
     padding: 26px;
+    text-align: left;
   }
   
   .sd-mini-cta h4 {
     color: #fff;
     font-size: 1.08rem;
+    text-align: right;
     margin-bottom: 8px;
   }
   
   .sd-mini-cta p {
     color: #a9a9c0;
     font-size: 0.86rem;
+    text-align: right;
     line-height: 1.95;
     margin-bottom: 18px;
   }
@@ -3694,11 +3693,6 @@
     font-size: 0.94rem;
     line-height: 1.8;
     transition: border-color 0.25s, transform 0.3s var(--ease);
-  }
-  
-  .checks li:hover {
-    border-color: var(--c-accent-line);
-    transform: translateY(-3px);
   }
   
   .checks svg {
