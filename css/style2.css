@@ -1396,11 +1396,7 @@
     }
   
     .w-cat {
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      color: var(--c-accent-deep);
-      margin-bottom: 6px;
+      display: none;
     }
   
     .w-title {
@@ -2426,13 +2422,13 @@
   
     .cta-mini h3 {
       color: #fff;
-      font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+      font-size: clamp(1.1rem, 2.4vw, 1.7rem);
     }
   
     .cta-mini p {
       color: #a9a9c0;
       margin-top: 8px;
-      max-width: 63ch;
+      max-width: 83ch;
     }
   
     /* ---------- صفحه جزئیات پروژه ---------- */

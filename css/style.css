@@ -2495,9 +2495,7 @@
   }
   
   .w-cat {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--c-accent-deep);
+    display: none;
   }
   
   .w-title {
@@ -2725,7 +2723,7 @@
   }
 
   .services-hero-copy .page-title {
-    max-width: 18ch;
+    max-width: 48ch;
   }
 
   .services-hero-box {
@@ -3785,13 +3783,13 @@
   
   .cta-mini h3 {
     color: #fff;
-    font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+    font-size: clamp(1.1rem, 2.4vw, 1.7rem);
   }
   
   .cta-mini p {
     color: #a9a9c0;
     margin-top: 8px;
-    max-width: 63ch;
+    max-width: 83ch;
   }
   
   /* ---------- صفحه جزئیات پروژه ---------- */
