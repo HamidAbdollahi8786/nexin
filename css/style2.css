@@ -1319,11 +1319,13 @@
     .work-grid {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      gap: clamp(18px, 2.6vw, 30px);
+      gap: clamp(18px, 2.4vw, 28px);
     }
   
     .work-card {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
       position: relative;
       background: var(--c-surface);
       border: 1px solid var(--c-line);
@@ -1349,17 +1351,17 @@
       display: block;
     }
   
-    .wc-feature { grid-column: span 7; }
-    .wc-a { grid-column: span 5; }
-    .wc-b { grid-column: span 5; }
+    .wc-feature { grid-column: span 12; }
+    .wc-a { grid-column: span 6; }
+    .wc-b { grid-column: span 6; }
     .wc-wide { grid-column: span 12; }
   
     .w-frame {
       position: relative;
       overflow: hidden;
       border-radius: var(--radius-lg);
-      border: 1px solid var(--c-line);
-      background: var(--c-surface);
+      border: none;
+      background: #fff;
     }
   
     .wc-feature .w-frame { aspect-ratio: 7 / 5.4; }
@@ -1388,11 +1390,12 @@
     }
   
     .w-info {
-      padding: 18px 24px 20px;
+      padding: 22px 24px;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       gap: 16px;
+      direction: rtl;
     }
   
     .w-cat {
@@ -1400,8 +1403,9 @@
     }
   
     .w-title {
-      font-size: 1.28rem;
+      font-size: 1.2rem;
       font-weight: 800;
+      color: var(--c-ink);
       transition: color 0.25s;
     }
   
@@ -1410,23 +1414,25 @@
     }
   
     .w-desc {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--c-muted);
-      margin-top: 6px;
-      max-width: 56ch;
+      line-height: 1.85;
+      margin-top: 2px;
+      max-width: 42ch;
     }
   
     .w-more {
       flex-shrink: 0;
       display: grid;
       place-items: center;
-      width: 44px;
-      height: 44px;
+      width: 42px;
+      margin-left: -7px;
+      margin-bottom: -7px;
+      height: 42px;
       border-radius: 50%;
       border: 1px solid var(--c-line);
       background: var(--c-surface);
       color: var(--c-ink-2);
-      margin-top: 4px;
       order: 1;
       transition: background 0.3s, color 0.3s, border-color 0.3s;
     }
@@ -1459,7 +1465,7 @@
     }
   
     .wc-wide .w-more {
-      margin-top: 22px;
+      order: 1;
     }
   
     /* ---------- پنل دعوت به اقدام ---------- */
@@ -3094,7 +3100,9 @@
   
   /* کارت */
   .work-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     background: var(--c-surface);
     border: 1px solid var(--c-line);
@@ -3162,7 +3170,9 @@
   
   /* کارت */
   .work-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     background: var(--c-surface);
     border: 1px solid var(--c-line);
@@ -3265,8 +3275,8 @@
     display: block;
     flex-shrink: 0;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--c-line);
-    background: var(--c-surface);
+    border: none;
+    background: #fff;
     /* aspect-ratio حذف شده تا ارتفاع ثابت بماند */
   }
   
@@ -3285,10 +3295,11 @@
   .w-info {
     flex: 1;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
-    padding-top: 18px;
+    padding: 22px 24px;
+    direction: rtl;
   }
   
   /* مخفی کردن عدد */

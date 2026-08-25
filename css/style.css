@@ -2483,7 +2483,7 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
-    padding: 22px 24px 24px;
+    padding: 22px 24px;
     direction: rtl;
   }
   
@@ -2525,6 +2525,8 @@
     place-items: center;
     width: 42px;
     height: 42px;
+    margin-left: -7px;
+    margin-bottom: -7px;
     border-radius: 50%;
     border: 1px solid var(--c-line);
     background: var(--c-surface);
