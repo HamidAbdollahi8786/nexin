@@ -307,7 +307,7 @@
         .map(function (st, i) {
           return (
             '<div class="step" data-n="' +
-            fa2(i + 1) +
+            String(i + 1).padStart(2, '0') +
             '"><h3>' +
             st.t +
             "</h3><p>" +
@@ -349,16 +349,13 @@
         '      <h1 class="page-title">' +
         s.title +
         "</h1>" +
-        '      <p class="sd-tagline">' +
-        s.line +
-        "</p>" +
         '      <p class="sd-lead">' +
         s.heroLead +
         "</p>" +
         '      <div class="sd-actions">' +
         '        <a class="btn btn-primary" href="' +
         url("contact.html") +
-        '">درخواست این خدمت ' +
+        '">درخواست  خدمت ' +
         ic.arrow +
         "</a>" +
         '        <a class="btn btn-ghost" href="' +
@@ -536,7 +533,6 @@
         "</section>" +
         '<div class="container pd-body">' +
         '  <section class="pd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۱ / درباره‌ی پروژه</p>' +
         '    <p class="big">' +
         p.description +
         "</p>" +
@@ -554,13 +550,11 @@
         "</p></div>" +
         "  </section>" +
         '  <section class="pd-sec" style="margin-top:clamp(44px,6vw,68px)" data-reveal>' +
-        '    <p class="sec-label">۰۲ / راه‌حل و اجرا</p>' +
         "    <p>" +
         p.approach +
         "</p>" +
         "  </section>" +
         '  <section class="pd-result" data-reveal>' +
-        '    <p class="sec-label">۰۳ / نتیجه</p>' +
         "    <p>" +
         p.result +
         "</p>" +
@@ -605,8 +599,16 @@
           icon: ic.phone,
           title: "تماس تلفنی",
           hint: "موبایل — تماس مستقیم با تیم",
-          val: s.phoneDisplay,
-          href: s.phoneLink,
+          val: s.phoneDisplay1,
+          href: s.phoneLink1,
+          ext: false,
+        },
+        {
+          icon: ic.phone,
+          title: "تماس تلفنی",
+          hint: "موبایل — تماس مستقیم با تیم",
+          val: s.phoneDisplay2,
+          href: s.phoneLink2,
           ext: false,
         },
         {

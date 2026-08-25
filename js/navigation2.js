@@ -193,7 +193,7 @@
         '      <div class="ft-col"><h4 class="ft-title">خدمات</h4><ul class="ft-list">' + services + "</ul></div>" +
         '      <div class="ft-col"><h4 class="ft-title">تماس</h4><ul class="ft-contact">' +
         '        <li>' + icons.mail + ' <a class="ltr" href="mailto:' + s.email + '">' + s.email + "</a></li>" +
-        '        <li>' + icons.phone + ' <a class="ltr" href="' + s.phoneLink + '">' + s.phoneDisplay + "</a></li>" +
+        '        <li>' + icons.phone + ' <a class="ltr" href="' + s.phoneLink1 + '">' + s.phoneDisplay1 + '</a> | <a class="ltr" href="' + s.phoneLink2 + '">' + s.phoneDisplay2 + "</a></li>" +
         '        <li>' + icons.telegram + ' <a class="ltr" href="' + s.telegramUrl + '" target="_blank" rel="noopener">' + s.telegram + "</a></li>" +
         '        <li>' + icons.pin + " <span>" + s.city + "</span></li>" +
         "      </ul></div>" +

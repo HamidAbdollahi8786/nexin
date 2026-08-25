@@ -355,7 +355,7 @@
       var steps = s.process
         .map(function (st, i) {
           return (
-            '<div class="step" data-n="' + fa2(i + 1) + '"><h3>' + st.t + "</h3><p>" + st.d + "</p></div>"
+            '<div class="step" data-n="' + String(i + 1).padStart(2, '0') + '"><h3>' + st.t + "</h3><p>" + st.d + "</p></div>"
           );
         })
         .join("");
@@ -383,10 +383,9 @@
         "      </nav>" +
         '      <p class="sec-label">' + s.code + "</p>" +
         "      <h1 class=\"page-title\">" + s.title + "</h1>" +
-        '      <p class="sd-tagline">' + s.line + "</p>" +
         '      <p class="sd-lead">' + s.heroLead + "</p>" +
         '      <div class="sd-actions">' +
-        '        <a class="btn btn-primary" href="' + url("contact.html") + '">درخواست این خدمت ' + ic.arrow + "</a>" +
+        '        <a class="btn btn-primary" href="' + url("contact.html") + '">درخواست خدمت ' + ic.arrow + "</a>" +
         '        <a class="btn btn-ghost" href="' + url("portfolio.html") + '">مشاهده نمونه‌کارها</a>' +
         "      </div>" +
         "    </div>" +
@@ -399,7 +398,7 @@
         "      </div>" +
         '      <div class="sd-mini-cta" data-reveal style="--d:90ms">' +
         "        <h4>مشاوره‌ی اولیه رایگان است</h4>" +
-        "        <p>اگر مطمئن نیستید این خدمت برای شماست، نیم ساعت گفتگو کافی است.</p>" +
+        "        <p>اگر مطمئن نیستید این خدمت برای شما مناسب است یا خیر، سی دقیقه گفتگو کافی است.</p>" +
         '        <a class="btn btn-primary btn-sm" href="' + url("contact.html") + '">شروع گفتگو</a>' +
         "      </div>" +
         "    </aside>" +
@@ -407,7 +406,6 @@
         "</section>" +
         '<div class="container sd-body">' +
         '  <section class="sd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۱ / مسئله و راه‌حل</p>' +
         "    <h2 class=\"h2\">چرا به این خدمت نیاز دارید؟</h2>" +
         '    <div class="duo">' +
         '      <div class="panel panel-ch"><h3>' + ic.cross + " مسئله</h3><p>" + s.challenge + "</p></div>" +
@@ -415,17 +413,14 @@
         "    </div>" +
         "  </section>" +
         '  <section class="sd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۲ / دستاورد شما</p>' +
         "    <h2 class=\"h2\">چه چیزی به دست می‌آورید؟</h2>" +
         '    <ul class="checks">' + benefits + "</ul>" +
         "  </section>" +
         '  <section class="sd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۳ / روند کار</p>' +
-        "    <h2 class=\"h2\">چطور پیش می‌رویم؟</h2>" +
+        "    <h2 class=\"h2\">روند کار ما</h2>" +
         '    <div class="steps">' + steps + "</div>" +
         "  </section>" +
         '  <section class="sd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۴ / خروجی‌ها</p>' +
         "    <h2 class=\"h2\">در پایان، چه دریافت می‌کنید؟</h2>" +
         '    <div class="deliver">' +
         '      <div class="deliver-head"><h3>فهرست تحویلی‌های پروژه</h3><span class="mono">DELIVERABLES</span></div>' +
@@ -494,7 +489,6 @@
         "</section>" +
         '<div class="container pd-body">' +
         '  <section class="pd-sec" data-reveal>' +
-        '    <p class="sec-label">۰۱ / درباره‌ی پروژه</p>' +
         '    <p class="big">' + p.description + "</p>" +
         "  </section>" +
         '  <section class="pd-duo">' +
@@ -502,11 +496,9 @@
         '    <div class="panel panel-sol" data-reveal style="--d:90ms"><h3>' + ic.check + " هدف</h3><p>" + p.goal + "</p></div>" +
         "  </section>" +
         '  <section class="pd-sec" style="margin-top:clamp(44px,6vw,68px)" data-reveal>' +
-        '    <p class="sec-label">۰۲ / راه‌حل و اجرا</p>' +
         "    <p>" + p.approach + "</p>" +
         "  </section>" +
         '  <section class="pd-result" data-reveal>' +
-        '    <p class="sec-label">۰۳ / نتیجه</p>' +
         "    <p>" + p.result + "</p>" +
         "  </section>" +
         "</div>";
@@ -520,7 +512,8 @@
   
       var channels = [
         { icon: ic.mail, title: "ایمیل", hint: "پاسخ در کمتر از یک روز کاری", val: s.email, href: "mailto:" + s.email, ext: false },
-        { icon: ic.phone, title: "تماس تلفنی", hint: "موبایل — تماس مستقیم با تیم", val: s.phoneDisplay, href: s.phoneLink, ext: false },
+        { icon: ic.phone, title: "تماس تلفنی", hint: "موبایل — تماس مستقیم با تیم", val: s.phoneDisplay1, href: s.phoneLink1, ext: false },
+        { icon: ic.phone, title: "تماس تلفنی", hint: "موبایل — تماس مستقیم با تیم", val: s.phoneDisplay2, href: s.phoneLink2, ext: false },
         { icon: ic.telegram, title: "تلگرام", hint: "گفتگوی سریع و غیررسمی", val: s.telegram, href: s.telegramUrl, ext: true },
         { icon: ic.whatsapp, title: "واتس‌اپ", hint: "ارسال پیام یا تماس صوتی", val: s.whatsappDisplay, href: s.whatsappUrl, ext: true },
         { icon: ic.instagram, title: "اینستاگرام", hint: "پشت‌صحنه‌ی پروژه‌ها و استودیو", val: s.instagram, href: s.instagramUrl, ext: true },

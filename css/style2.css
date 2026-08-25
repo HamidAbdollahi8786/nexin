@@ -2160,7 +2160,7 @@
     .sd-lead {
       margin-top: 14px;
       color: var(--c-ink-2);
-      max-width: 56ch;
+      max-width: 60ch;
       line-height: 2.1;
     }
   
@@ -2234,7 +2234,6 @@
   
     .sd-others a:hover {
       color: var(--c-accent-deep);
-      padding-inline-start: 10px;
     }
   
     .sd-others a.is-current {
@@ -2361,10 +2360,7 @@
       position: relative;
       transition: border-color 0.3s;
     }
-  
-    .step:hover {
-      border-color: var(--c-accent);
-    }
+
   
     .step::before {
       content: attr(data-n);

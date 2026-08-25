@@ -3513,7 +3513,7 @@
   .sd-lead {
     margin-top: 14px;
     color: var(--c-ink-2);
-    max-width: 56ch;
+    max-width: 60ch;
     line-height: 2.1;
   }
   
@@ -3587,7 +3587,6 @@
   
   .sd-others a:hover {
     color: var(--c-accent-deep);
-    padding-inline-start: 10px;
   }
   
   .sd-others a.is-current {
@@ -3714,11 +3713,7 @@
     position: relative;
     transition: border-color 0.3s;
   }
-  
-  .step:hover {
-    border-color: var(--c-accent);
-  }
-  
+
   .step::before {
     content: attr(data-n);
     font-family: var(--font-mono);
@@ -4310,54 +4305,36 @@
 
 /* top-right: telegram */
 .ct-q1 {
-  top: 10px;
-  right: 10px;
+  top: 27px;
+  right: 15px;
   width: 150px;
   height: 150px;
   border-radius: 0 150px 0 0;
 }
-
-.ct-q1:hover {
-  background: rgba(124, 58, 237, 0.08);
-}
-
 /* bottom-right: whatsapp */
 .ct-q2 {
   bottom: 10px;
-  right: 10px;
+  right: 15px;
   width: 150px;
   height: 150px;
   border-radius: 0 0 150px 0;
 }
-
-.ct-q2:hover {
-  background: rgba(34, 181, 115, 0.08);
-}
-
 /* bottom-left: instagram */
 .ct-q3 {
   bottom: 10px;
-  left: 10px;
+  left: 18px;
   width: 150px;
   height: 150px;
   border-radius: 0 0 0 150px;
 }
 
-.ct-q3:hover {
-  background: rgba(225, 48, 108, 0.06);
-}
-
 /* top-left: email */
 .ct-q4 {
-  top: 10px;
-  left: 10px;
+  top: 25px;
+  left: 20px;
   width: 150px;
   height: 150px;
   border-radius: 150px 0 0 0;
-}
-
-.ct-q4:hover {
-  background: rgba(124, 58, 237, 0.06);
 }
 
 /* icon centered in arc centroid (4r/3π ≈ 64px from corner) */

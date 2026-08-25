@@ -18,6 +18,9 @@
     grid-template-columns: 1fr;
     gap: 56px;
   }
+  .sd-lead{
+    text-align: center;
+  }
 
   .hero-visual {
     min-height: 480px;
@@ -113,6 +116,9 @@
   .main-nav,
   .hd-cta {
     display: none;
+  }
+  .sd-lead{
+    text-align: center;
   }
 
   .burger {
@@ -289,6 +295,9 @@
 @media (max-width: 640px) {
   body {
     font-size: 15px;
+  }
+  .sd-lead{
+    text-align: center;
   }
 
   #services.sec {
@@ -640,6 +649,7 @@
 
   .sd-actions .btn {
     flex: 1 1 0;
+    font-size: 14px;
     width: 0;
   }
 
