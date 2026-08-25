@@ -194,7 +194,9 @@
     }
   
     .sec--tint {
-      background:var(--c-paper)
+      background:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        radial-gradient(circle at 85% 0%, var(--c-accent-soft), transparent 42%);
     }
 
     .sec--surface {
@@ -257,10 +259,6 @@
     .sec-link:hover {
       color: var(--c-accent-deep);
       border-color: var(--c-accent);
-    }
-  
-    .sec-link:hover svg {
-      transform: translateX(-4px);
     }
   
     .dotgrid {
@@ -1567,6 +1565,7 @@
       position: relative;
       overflow: hidden;
       margin-bottom: 25px;
+      background: #fff;
     }
   
     .page-hero::before {
@@ -1659,7 +1658,7 @@
       background: #0d1117;
       border: 1px solid #30363d;
       border-radius: 12px;
-      box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.35);
       overflow: hidden;
       transform: translateY(-16px);
       max-height: 380px;

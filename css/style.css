@@ -256,10 +256,7 @@
     color: var(--c-accent-deep);
     border-color: var(--c-accent);
   }
-  
-  .sec-link:hover svg {
-    transform: translateX(-4px);
-  }
+
   
   .dotgrid {
     background-image: radial-gradient(rgba(21, 21, 30, 0.11) 1px, transparent 1px);
