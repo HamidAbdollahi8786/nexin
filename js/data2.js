@@ -11,7 +11,7 @@
       latin: "NEXIN",
       tagline: "استودیوی طراحی و توسعه‌ی نرم‌افزار",
       description:
-        "استودیوی مستقل توسعه‌ی نرم‌افزار؛ طراحی و ساخت محصولات دیجیتال از ایده تا انتشار، با وسواس طراحی و دقت مهندسی.",
+        "تیم مستقل توسعه‌ی نرم‌افزار؛ طراحی و ساخت محصولات دیجیتال از ایده تا انتشار، با وسواس طراحی و دقت مهندسی.",
       email: "hamidabdollahi8787@gmail.com",
       phoneDisplay: "۰۹۹۱۲۸۷۰۷۹۹ | ۰۹۹۱۹۶۶۵۳۵۱",
       phoneLink: "tel:+989912870799",
@@ -40,7 +40,7 @@
         slug: "web-development",
         code: "NX-01",
         title: "طراحی و توسعه وب‌سایت",
-        line: "ویترین دیجیتال شما؛ سریع، امن و هم‌تراز با برند.",
+        line: "وب‌سایت سریع، امن و هماهنگ با برند شما.",
         previewImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=80&auto=format&fit=crop",
         summary:
           "طراحی و پیاده‌سازی وب‌سایت‌های شرکتی و محصولی با معماری مدرن، سرعت بارگذاری بالا و کدی که نگهداری از آن ساده است.",
@@ -76,7 +76,7 @@
         slug: "mobile-app",
         code: "NX-02",
         title: "طراحی اپلیکیشن موبایل",
-        line: "محصولی در جیب کاربر؛ روان، سبک و همیشه در دسترس.",
+        line: "اپلیکیشن روان و سبک برای کاربران.",
         previewImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=80&auto=format&fit=crop",
         summary:
           "طراحی و توسعه‌ی اپلیکیشن‌های iOS و اندروید با تجربه‌ای روان، معماری بومی و انتشاری بی‌دغدغه.",
@@ -112,7 +112,7 @@
         slug: "ui-ux",
         code: "NX-03",
         title: "طراحی UI/UX",
-        line: "اول آدم‌ها، بعد پیکسل‌ها؛ طراحی‌ای که معنا دارد.",
+        line: "طراحی‌ای برای کاربر واقعی، نه فرضی.",
         previewImage: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=900&q=80&auto=format&fit=crop",
         summary:
           "پژوهش، معماری اطلاعات و طراحی رابط؛ از وایرفریم تا دیزاین‌سیستمی که تیم توسعه با آن راحت است.",
@@ -147,7 +147,7 @@
         slug: "custom-software",
         code: "NX-04",
         title: "طراحی نرم‌افزارهای اختصاصی",
-        line: "وقتی راه‌حل آماده نیست؛ مهندسی برای مسئله‌ی شما.",
+        line: "نرم‌افزار اختصاصی دقیقاً برای مسئله‌ی شما.",
         previewImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop",
         summary:
           "سامانه‌های سازمانی و محصولات ابری با معماری مقیاس‌پذیر؛ دقیقاً به اندازه‌ی نیاز شما، نه بیشتر.",
@@ -182,7 +182,7 @@
         slug: "maintenance",
         code: "NX-05",
         title: "پشتیبانی و نگهداری",
-        line: "بعد از انتشار تازه شروع می‌شود؛ ما می‌مانیم.",
+        line: "نگهداری و پشتیبانی فنیِ مستمر.",
         previewImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80&auto=format&fit=crop",
         summary:
           "پایش، به‌روزرسانی و بهبود مستمر؛ تا محصول شما همیشه سالم، امن و به‌روز بماند.",
@@ -217,7 +217,7 @@
         slug: "backend-api",
         code: "NX-06",
         title: "توسعه Backend و API",
-        line: "ستون فقرات محصول؛ قدرتمند، امن و مقیاس‌پذیر.",
+        line: "بک‌اند قدرتمند، امن و مقیاس‌پذیر.",
         previewImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&q=80&auto=format&fit=crop",
         summary:
           "طراحی و پیاده‌سازی APIها و سرویس‌های سمت سرور با معماری تمیز، مستندات دقیق و کارایی قابل‌اتکا.",
@@ -252,7 +252,7 @@
         slug: "wordpress",
         code: "NX-07",
         title: "توسعه سایت‌های وردپرسی",
-        line: "قدرت وردپرس، با استاندارد استودیویی ما.",
+        line: "وردپرسی سریع، امن و اختصاصی.",
         previewImage: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=900&q=80&auto=format&fit=crop",
         summary:
           "راه‌اندازی و توسعه‌ی سایت‌های وردپرسی با قالب اختصاصی، افزونه‌های سفارشی و بهینه‌سازی سرعت و امنیت.",
@@ -312,7 +312,7 @@
           { src: "images/lebas.png", alt: "صفحه‌ی اصلی فروشگاه لباس", caption: "صفحه‌ی اصلی؛ معرفی مجموعه‌ی جدید فصل" },
           { src: "images/lebas.png", alt: "صفحه‌ی محصول با راهنمای سایز", caption: "صفحه‌ی محصول؛ نمایش چند زاویه‌ای و راهنمای سایز" },
         ],
-        liveUrl: "",
+        liveUrl: "https://lebas-3uvh.vercel.app/index.html",
       },
       {
         id: "project-2",
@@ -339,7 +339,7 @@
           { src: "images/skyfly.png", alt: "صفحه‌ی اصلی وب‌سایت هواپیمایی اسکای‌فلای", caption: "صفحه‌ی اصلی؛ جستجو و معرفی مسیرهای پروازی" },
           { src: "images/skyfly.png", alt: "فرآیند رزرو بلیط در اسکای‌فلای", caption: "مسیر رزرو بلیط از جستجو تا پرداخت" },
         ],
-        liveUrl: "",
+        liveUrl: "https://sky-fly-ydxo.vercel.app/",
       },
       {
         id: "project-3",
@@ -366,7 +366,7 @@
           { src: "images/carshop.png", alt: "صفحه‌ی اصلی فروشگاه لوازم خودرو", caption: "صفحه‌ی اصلی؛ دسته‌بندی قطعات و پیشنهادهای ویژه" },
           { src: "images/carshop.png", alt: "صفحه‌ی محصول در فروشگاه لوازم خودرو", caption: "صفحه‌ی محصول؛ مشخصات فنی و سازگاری با مدل خودرو" },
         ],
-        liveUrl: "",
+        liveUrl: "https://carshop-f8i2.vercel.app/",
       },
       {
         id: "project-4",
@@ -392,8 +392,7 @@
         gallery: [
           { src: "images/cafe.png", alt: "صفحه‌ی اصلی وب‌سایت کافه", caption: "صفحه‌ی اصلی؛ معرفی فضا و منوی ویژه" },
           { src: "images/cafe.png", alt: "صفحه‌ی منو و رزرو میز در کافه", caption: "صفحه‌ی منو؛ نمایش اقلام با قیمت و تصویر" },
-        ],
-        liveUrl: "",
+        ],        liveUrl: "https://kafe-aftab-4swg.vercel.app/",
       },
     ],
   };

@@ -261,10 +261,7 @@
             url("services/" + s.slug + ".html") +
             '" data-reveal style="--d:' +
             i * 40 +
-            'ms">' +
-            '  <span class="srv-num">' +
-            fa2(i + 1) +
-            "</span>" +
+            'ms">' +'  <span class="srv-num">' + (String(i + 1).length < 2 ? "0" + (i + 1) : String(i + 1)) + "</span>" +
             "  <span><span class=\"srv-title\">" +
             s.title +
             "</span>" +
@@ -464,6 +461,7 @@
       var gallery = p.gallery
         .map(function (g) {
           return (
+            (p.liveUrl ? '<a href="' + p.liveUrl + '" target="_blank" rel="noopener" style="display:block;text-decoration:none;color:inherit">' : '') +
             '<figure class="gal-item" data-reveal>' +
             '  <img src="' +
             img(g.src) +
@@ -473,17 +471,11 @@
             "  <figcaption>" +
             g.caption +
             "</figcaption>" +
-            "</figure>"
+            "</figure>" +
+            (p.liveUrl ? '</a>' : '')
           );
         })
         .join("");
-      var live = p.liveUrl
-        ? '<a class="btn btn-primary" href="' +
-          p.liveUrl +
-          '" target="_blank" rel="noopener">مشاهده‌ی پروژه ' +
-          ic.external +
-          "</a>"
-        : "";
       mount.innerHTML =
         '<section class="page-hero">' +
         '  <div class="container pd-hero-grid">' +
@@ -525,13 +517,21 @@
         "</dd></div>" +
         "      </dl>" +
         "    </div>" +
-        '    <figure class="pd-cover kenburns" data-reveal="scale">' +
-        '      <img src="' +
-        img(p.coverImage) +
-        '" alt="' +
-        p.title +
-        '">' +
-        "    </figure>" +
+    (p.liveUrl
+          ? '<a href="' + p.liveUrl + '" target="_blank" rel="noopener" style="display:block;text-decoration:none;color:inherit">' +
+            '    <figure class="pd-cover kenburns">' +
+            '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
+            '    </figure>' +
+            '  </a>' +
+            '  <div style="margin-top:16px" data-reveal>' +
+            '    <a class="btn btn-primary" href="' + p.liveUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">مشاهده\u200cی سایت ' + ic.external + '</a>' +
+            '  </div>'
+          : '    <figure class="pd-cover kenburns" data-reveal="scale">' +
+            '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
+            '    </figure>' +
+            '  <div style="margin-top:16px" data-reveal>' +
+            '    <a class="btn btn-ghost" href="' + url('contact.html') + '">برای دریافت لینک پروژه تماس بگیرید ' + ic.arrow + '</a>' +
+            '  </div>') +
         "  </div>" +
         "</section>" +
         '<div class="container pd-body">' +
@@ -570,7 +570,6 @@
         '    <div class="pd-gallery" style="margin-top:22px">' +
         gallery +
         "</div>" +
-        (live ? '<div style="margin-top:28px" data-reveal>' + live + "</div>" : "") +
         "  </section>" +
         '  <nav class="pd-next" aria-label="پروژه‌های دیگر">' +
         '    <a class="back" href="' +

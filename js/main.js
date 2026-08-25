@@ -320,7 +320,7 @@
         .map(function (s, i) {
           return (
             '<a class="srv-row" href="' + url("services/" + s.slug + ".html") + '" data-reveal style="--d:' + i * 40 + 'ms">' +
-            '  <span class="srv-num">' + fa2(i + 1) + "</span>" +
+            '  <span class="srv-num">' + (String(i + 1).length < 2 ? "0" + (i + 1) : String(i + 1)) + "</span>" +
             '  <span><span class="srv-title">' + s.title + "</span>" +
             '  <span class="srv-sum">' + s.summary + "</span></span>" +
             '  <span class="srv-code">' + s.code + "</span>" +
@@ -475,9 +475,21 @@
         "        <div><dt>محدوده‌ی همکاری</dt><dd>" + p.scope + "</dd></div>" +
         "      </dl>" +
         "    </div>" +
-        '    <figure class="pd-cover kenburns" data-reveal="scale">' +
-        '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
-        "    </figure>" +
+    (p.liveUrl
+          ? '<a href="' + p.liveUrl + '" target="_blank" rel="noopener" style="display:block;text-decoration:none;color:inherit">' +
+            '    <figure class="pd-cover kenburns">' +
+            '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
+            '    </figure>' +
+            '  </a>' +
+            '  <div style="margin-top:16px" data-reveal>' +
+            '    <a class="btn btn-primary" href="' + p.liveUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">مشاهده\u200cی سایت ' + ic.external + '</a>' +
+            '  </div>'
+          : '    <figure class="pd-cover kenburns" data-reveal="scale">' +
+            '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
+            '    </figure>' +
+            '  <div style="margin-top:16px" data-reveal>' +
+            '    <a class="btn btn-ghost" href="' + url('contact.html') + '">برای دریافت لینک پروژه تماس بگیرید ' + ic.arrow + '</a>' +
+            '  </div>') +
         "  </div>" +
         "</section>" +
         '<div class="container pd-body">' +
@@ -493,8 +505,10 @@
         '    <p class="sec-label">۰۲ / راه‌حل و اجرا</p>' +
         "    <p>" + p.approach + "</p>" +
         "  </section>" +
-
-
+        '  <section class="pd-result" data-reveal>' +
+        '    <p class="sec-label">۰۳ / نتیجه</p>' +
+        "    <p>" + p.result + "</p>" +
+        "  </section>" +
         "</div>";
     }
   

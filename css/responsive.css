@@ -76,6 +76,36 @@
   .contact-side {
     position: static;
   }
+
+  .ct-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .ct-hero-copy .page-title {
+    text-align: center;
+    max-width: none;
+  }
+
+  .ct-hero-copy .page-lead {
+    text-align: center;
+  }
+
+  .ct-circle-wrap {
+    width: 280px;
+    height: 280px;
+  }
+
+  .ct-q1, .ct-q2, .ct-q3, .ct-q4 {
+    width: 135px;
+    height: 135px;
+  }
+
+  .ct-q1 { top: 10px; right: 10px; border-radius: 0 135px 0 0; }
+  .ct-q2 { bottom: 10px; right: 10px; border-radius: 0 0 135px 0; }
+  .ct-q3 { bottom: 10px; left: 10px; border-radius: 0 0 0 135px; }
+  .ct-q4 { top: 10px; left: 10px; border-radius: 135px 0 0 0; }
 }
 
 /* ---------- تبلت ---------- */
@@ -408,6 +438,18 @@
     display: none;
   }
 
+  .about-hero-visual {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .about-hero-visual .flutter-ide {
+    max-width: 100%;
+    transform: none;
+  }
+
   /* ---------- صحنه‌ی کدنویسیِ موبایل ---------- */
   .hero-mobile-stage {
     display: block;
@@ -734,11 +776,52 @@
   .svc-row {
     grid-template-columns: 1fr 36px;
     padding: 16px 4px;
+    gap: 10px;
   }
 
   .svc-arr {
     width: 32px;
     height: 32px;
+  }
+
+  .svc-title {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .svc-body {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .svc-left {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .pv {
+    position: relative;
+    min-height: 0;
+  }
+
+  .pv-frame {
+    min-height: 0;
+    border-radius: 16px;
+  }
+
+  .pv-content {
+    padding: 16px 18px 20px;
+  }
+
+  .pv-note {
+    font-size: 0.82rem;
+  }
+
+  .pv-icon svg {
+    width: 30px;
+    height: 30px;
   }
 
   .m-links a {
@@ -884,5 +967,29 @@
   .hms-ln {
     width: 14px;
     margin-inline-end: 8px;
+  }
+
+  .ct-circle-wrap {
+    width: 240px;
+    height: 240px;
+  }
+
+  .ct-q1, .ct-q2, .ct-q3, .ct-q4 {
+    width: 115px;
+    height: 115px;
+  }
+
+  .ct-q1 { top: 10px; right: 10px; border-radius: 0 115px 0 0; }
+  .ct-q2 { bottom: 10px; right: 10px; border-radius: 0 0 115px 0; }
+  .ct-q3 { bottom: 10px; left: 10px; border-radius: 0 0 0 115px; }
+  .ct-q4 { top: 10px; left: 10px; border-radius: 115px 0 0 0; }
+
+  .ct-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ct-label {
+    font-size: 0.6rem;
   }
 }

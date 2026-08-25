@@ -97,6 +97,7 @@
       "    </button>" +
       "  </div>" +
       "</header>" +
+      '<div class="m-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>' +
       '<div class="m-nav" id="mobile-nav" aria-hidden="true">' +
       '  <nav class="m-links" aria-label="ناوبری موبایل">' + mLinks + "</nav>" +
       '  <div class="m-foot">' +
@@ -117,16 +118,28 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
+    var backdrop = document.getElementById("mobile-nav-backdrop");
+
     function setMenu(open) {
       burger.setAttribute("aria-expanded", String(open));
       mnav.classList.toggle("is-open", open);
       mnav.setAttribute("aria-hidden", String(!open));
+      if (backdrop) {
+        backdrop.classList.toggle("is-open", open);
+        backdrop.setAttribute("aria-hidden", String(!open));
+      }
       document.body.style.overflow = open ? "hidden" : "";
     }
 
     burger.addEventListener("click", function () {
       setMenu(burger.getAttribute("aria-expanded") !== "true");
     });
+
+    if (backdrop) {
+      backdrop.addEventListener("click", function () {
+        setMenu(false);
+      });
+    }
 
     mnav.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", function () {
@@ -167,7 +180,7 @@
       '    <div class="ft-grid">' +
       '      <div class="ft-brand">' +
       '        <a class="logo" href="' + DATA.url("index.html") + '" aria-label="نکسین — صفحه اصلی">' +
-      '          <span class="logo-mark">' + icons.logo + "</span>" +
+      '          <span class="logo-mark ft-logo-mark"><img src="' + DATA.base + 'images/logo-footer.png" alt="لوگوی نکسین" width="38" height="38" style="border-radius:10px;object-fit:cover;"></span>' +
       '          <span class="logo-word"><strong>' + s.name + "</strong><span>" + s.latin + "®</span></span>" +
       "        </a>" +
       '        <p class="ft-desc">' + s.description + "</p>" +
