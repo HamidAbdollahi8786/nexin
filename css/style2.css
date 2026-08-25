@@ -530,7 +530,7 @@
       max-width: 340px;
       height: 100vh;
       z-index: 1000;
-      background: var(--c-paper);
+      background: #fff;
       padding: 30px 15px 10px; 
       display: flex;
       flex-direction: column;
@@ -1361,6 +1361,7 @@
       overflow: hidden;
       border-radius: var(--radius-lg);
       border: none;
+      border-bottom: 1px solid var(--c-line);
       background: #fff;
     }
   
@@ -1395,6 +1396,7 @@
       align-items: flex-end;
       justify-content: space-between;
       gap: 16px;
+      border-top: 1px solid #dfdfdf;
       direction: rtl;
     }
   

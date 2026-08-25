@@ -2483,6 +2483,7 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 16px;
+    border-top: 1px solid #dfdfdf;
     padding: 22px 24px;
     direction: rtl;
   }
