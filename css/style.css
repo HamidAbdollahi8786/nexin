@@ -2642,6 +2642,7 @@
     padding-block: clamp(36px, 5vw, 56px) clamp(24px, 3vw, 40px);
     position: relative;
     overflow: hidden;
+    margin-bottom: 25px;
   }
 
   body[data-page="about"] .sec {
