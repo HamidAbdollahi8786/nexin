@@ -332,7 +332,7 @@
   }
 
   .pd-meta {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .pd-next {

@@ -365,12 +365,12 @@
         "    </div>" +
         '    <aside class="sd-aside">' +
         '      <div class="sd-card" data-reveal>' +
-        '        <span class="sd-icon">' +
+        '        <div class="sd-card-head"><span class="sd-icon">' +
         serviceIcons[s.slug] +
         "</span>" +
         '        <span class="sd-code">' +
         s.code +
-        " — NEXIN SERVICES</span>" +
+        " — NEXIN SERVICES</span></div>" +
         "        <h3>سایر خدمات</h3>" +
         '        <nav class="sd-others" aria-label="سایر خدمات">' +
         others +
@@ -520,8 +520,8 @@
             '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
             '    </figure>' +
             '  </a>' +
-            '  <div style="margin-top:16px" data-reveal>' +
-            '    <a class="btn btn-primary" href="' + p.liveUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">مشاهده\u200cی سایت ' + ic.external + '</a>' +
+            '  <div style="margin-top:16px;text-align:center" data-reveal>' +
+            '    <a class="btn btn-primary pd-live" href="' + p.liveUrl + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">مشاهده\u200cی سایت <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19"/><path d="M12 2.5c3 2.8 4.3 6 4.3 9.5S15 18.7 12 21.5c-3-2.8-4.3-6-4.3-9.5S9 5.3 12 2.5Z"/></svg></a>' +
             '  </div>'
           : '    <figure class="pd-cover kenburns" data-reveal="scale">' +
             '      <img src="' + img(p.coverImage) + '" alt="' + p.title + '">' +
@@ -548,11 +548,6 @@
         " هدف</h3><p>" +
         p.goal +
         "</p></div>" +
-        "  </section>" +
-        '  <section class="pd-sec" style="margin-top:clamp(44px,6vw,68px)" data-reveal>' +
-        "    <p>" +
-        p.approach +
-        "</p>" +
         "  </section>" +
         '  <section class="pd-result" data-reveal>' +
         "    <p>" +
