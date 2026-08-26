@@ -1605,9 +1605,10 @@
     }
   
     .page-title {
-      font-size: clamp(2.1rem, 4.6vw, 3.5rem);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
       font-weight: 900;
       line-height: 1.35;
+      text-align: right;
       max-width: 24ch;
     }
   
@@ -1640,7 +1641,7 @@
   
     .pf-hero-copy .page-title {
       max-width: none;
-      text-align: center;
+      text-align: right;
     }
   
     .pf-hero-visual {
