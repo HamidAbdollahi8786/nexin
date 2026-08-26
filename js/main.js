@@ -245,10 +245,11 @@
               '<div class="pv" data-pv="' + i + '">' +
               '  <div class="pv-illu">' + (illu[s.slug] || "") + "</div>" +
               '  <div class="pv-meta">' +
-              '    <span class="pv-num" dir="ltr">' + (String(i + 1).length < 2 ? "0" + (i + 1) : String(i + 1)) + "</span>" +
               "    <h3>" + s.title + "</h3>" +
-              "    <p>" + s.line + "</p>" +
-              '    <a class="pv-link" href="' + url("services/" + s.slug + ".html") + '">مشاهده‌ی خدمت ' + ic.arrow + "</a>" +
+              '    <div class="pv-row">' +
+              "      <p>" + s.line + "</p>" +
+              '      <a class="pv-link" href="' + url("services/" + s.slug + ".html") + '">مشاهده‌ی خدمت ' + ic.arrow + "</a>" +
+              '    </div>' +
               "  </div>" +
               "</div>"
             );
