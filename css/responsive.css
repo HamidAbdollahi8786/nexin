@@ -1023,8 +1023,8 @@
     height: 115px;
   }
 
-  .ct-q1 { top: 20px; right: 13px; border-radius: 0 115px 0 0; }
-  .ct-q2 { bottom: 15px; right: 10px; border-radius: 0 0 115px 0; }
+  .ct-q1 { top: 21px; right: 13px; border-radius: 0 115px 0 0; }
+  .ct-q2 { bottom: 14px; right: 10px; border-radius: 0 0 115px 0; }
   .ct-q3 { bottom: 15px; left: 15px; border-radius: 0 0 0 115px; }
   .ct-q4 { top: 20px; left: 15px; border-radius: 115px 0 0 0; }
 
