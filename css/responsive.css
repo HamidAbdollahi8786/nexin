@@ -105,10 +105,10 @@
     height: 135px;
   }
 
-  .ct-q1 { top: 10px; right: 10px; border-radius: 0 135px 0 0; }
-  .ct-q2 { bottom: 10px; right: 10px; border-radius: 0 0 135px 0; }
-  .ct-q3 { bottom: 10px; left: 10px; border-radius: 0 0 0 135px; }
-  .ct-q4 { top: 10px; left: 10px; border-radius: 135px 0 0 0; }
+  .ct-q1 { top: 20px; right: 13px; border-radius: 0 135px 0 0; }
+  .ct-q2 { bottom: 20px; right: 10px; border-radius: 0 0 135px 0; }
+  .ct-q3 { bottom: 20px; left: 15px; border-radius: 0 0 0 135px; }
+  .ct-q4 { top: 20px; left: 15px; border-radius: 135px 0 0 0; }
 }
 
 /* ---------- تبلت ---------- */

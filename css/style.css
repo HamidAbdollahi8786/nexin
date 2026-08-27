@@ -312,7 +312,7 @@
   }
   
   .btn-primary:hover {
-    background: var(--c-accent-deep);
+    background: var(--c-accent);
     box-shadow: var(--shadow-accent);
   }
   
@@ -4346,7 +4346,7 @@
 
 /* top-right: telegram */
 .ct-q1 {
-  top: 27px;
+  top: 30px;
   right: 15px;
   width: 150px;
   height: 150px;
@@ -4354,7 +4354,7 @@
 }
 /* bottom-right: whatsapp */
 .ct-q2 {
-  bottom: 10px;
+  bottom: 20px;
   right: 15px;
   width: 150px;
   height: 150px;
@@ -4362,23 +4362,21 @@
 }
 /* bottom-left: instagram */
 .ct-q3 {
-  bottom: 10px;
-  left: 18px;
+  bottom: 20px;
+  left: 20px;
   width: 150px;
   height: 150px;
   border-radius: 0 0 0 150px;
 }
-
 /* top-left: email */
 .ct-q4 {
-  top: 25px;
-  left: 20px;
+  top: 29px;
+  left:21px;
   width: 150px;
   height: 150px;
   border-radius: 150px 0 0 0;
 }
 
-/* icon centered in arc centroid (4r/3π ≈ 64px from corner) */
 .ct-icon {
   display: flex;
   align-items: center;
@@ -4390,13 +4388,6 @@
   border: 1px solid var(--c-line);
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: box-shadow 0.3s, transform 0.3s;
-  margin-top: -12px;
-}
-
-.ct-q1 .ct-icon,
-.ct-q4 .ct-icon {
-  margin-top: 0;
-  margin-bottom: -12px;
 }
 
 .ct-quad:hover .ct-icon {
