@@ -649,7 +649,7 @@
 
   .sd-actions .btn {
     flex: 1 1 0;
-    font-size: 14px;
+    font-size: 13px;
     width: 0;
   }
 
@@ -797,6 +797,30 @@
     grid-template-columns: 1fr 36px;
     padding: 16px 4px;
     gap: 10px;
+  }
+
+  .svc-row.is-on,
+  .svc-row:hover {
+    padding-inline-start: 16px;
+    background: transparent;
+  }
+
+  .svc-row.is-on .svc-num,
+  .svc-row:hover .svc-num {
+    color: var(--c-muted);
+  }
+
+  .svc-row.is-on .svc-title,
+  .svc-row:hover .svc-title {
+    color: var(--c-ink);
+  }
+
+  .svc-row.is-on .svc-arr,
+  .svc-row:hover .svc-arr {
+    background: var(--c-surface);
+    border-color: var(--c-line);
+    color: var(--c-ink-2);
+    transform: none;
   }
 
   .svc-arr {
